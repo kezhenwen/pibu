@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>坯布网-关于我们</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="plug/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="fl" style="margin-right: 30px">
+                <a style="color: white" href="http://www.tubur.net:8081/index.html#/login" target="_blank">登录</a>
+            </div>
+            <div class="fl">欢迎来到坯布网，面料人必上的网站</div>
+            <div class="fr">咨询热线：0512-6351-5528</div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container clear">
+            <div class="logo fl">
+                <a href="home.html">
+                    <img src="https://www.luyutex.com/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="tit1 fl">图布网</div>
+            <div class="tit2 fl">全棉坯布专家</div>
+            <div class="fr">
+                <div class="search fl">
+                    <input class="fl" id="name" type="text" />
+                    <button type="button" id="search-btn" class="fl">搜索</button>
+                </div>
+                <ul class="img-list inline fl">
+                    <li>
+                        <img src="images/pt-ico1.png" alt="" />
+                        <div>质量保证</div>
+                    </li>
+                    <li>
+                        <img src="images/pt-ico2.png" alt="" />
+                        <div>售后服务</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu themeBg">
+        <div class="container">
+            <ul class="nav tc">
+	            <li>
+	                <a href="strongSupplier.html">实力供应商</a>
+	            </li>
+                <li>
+                    <a href="home.html">网站首页</a>
+                </li>
+	            <li>
+	                <a href="yxSupplier.html">优选供应商</a>
+	            </li>
+                <li >
+                    <a href="pibu.html">坯布数据库</a>
+                </li>
+                <li>
+                    <a href="jiafang.html">家纺数据库</a>
+                </li>
+                <li >
+                    <a href="banpiao.html">半票数据库</a>
+                </li>
+                <li class="active">
+                    <a href="contact.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://www.pibu.cc/image/tu/2.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://www.pibu.cc/image/tu/1.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://www.pibu.cc/image/tu/2.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="main contact-main">
+        <div class="container clear">
+            <div class="map" id="map"></div>
+            <div class="tit">图布有限公司</div>
+            <div class="rows">公司地址：苏州市吴江区盛泽镇红安北路88号</div>
+            <div class="rows">手机/微信：13606253271&nbsp;&nbsp;&nbsp;&nbsp;QQ：XXXX</div>
+            <div class="rows">联系人：史经理</div>
+            <div class="rows">座机：0512-6351-5528</div>
+            <div class="rows">传真：XXXX</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="nav">
+                <ul class="link-list">
+                    <li>
+                        <a href="home.html">网站首页</a>
+                    </li>
+                    <span>|</span>
+	                <li>
+	                    <a href="strongSupplier.html">实力供应商</a>
+	                </li>
+                    <span>|</span>
+		            <li>
+		                <a href="yxSupplier.html">优选供应商</a>
+		            </li>
+                    <span>|</span>
+                    <li>
+                        <a href="pibu.html">坯布数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="jiafang.html">家纺数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="banpiao.html">半票数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright tc">Copyright  2014 Pibu.com. All Rights Reserved. 版权所有 江苏导航纺织科技有限公司 苏ICP备20003659号  </div>
+            <div class="tc">苏公网备案 20003659号  站长统计</div>
+        </div>
+    </div>
+    <script src="https://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+    <script>
+        !function(){
+            var infoWindow, map, level = 12,
+                center = {lng: 113.749078, lat: 23.019425},
+                features = [];
+
+            function loadFeatures(){
+                for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+                    data = features[i];
+                    switch(data.type){
+                        case "Marker":
+                            feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+                                zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+                                content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+                            break;
+                        case "Polyline":
+                            for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                                path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                            }
+                            feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+                                strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+                            break;
+                        case "Polygon":
+                            for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+                                path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+                            }
+                            feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+                                strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+                                fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+                            break;
+                        default: feature = null;
+                    }
+                    if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+                }
+            }
+
+            function mapFeatureClick(e){
+                if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+                var extData = e.target.getExtData();
+                infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+                infoWindow.open(map, e.lnglat);
+            }
+
+            map = new AMap.Map("map", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+
+            loadFeatures();
+
+            map.on('complete', function(){
+                map.plugin(["AMap.ToolBar", "AMap.OverView", "AMap.Scale"], function(){
+                    map.addControl(new AMap.ToolBar);
+                map.addControl(new AMap.OverView({isOpen: true}));
+                map.addControl(new AMap.Scale);
+                });
+            })
+
+        }();
+    </script>
+    <script src="plug/jquery/jquery.min.js"></script>
+    <script src="plug/swiper/swiper.min.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+        });
+    </script>
+</body>
+</html>

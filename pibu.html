@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>坯布网-坯布数据库</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="plug/swiper/swiper.min.css">
+    <link rel="stylesheet" href="plug/spage/jquery.sPage.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="top">
+        <div class="container clear">
+            <div class="fl" style="margin-right: 30px">
+                <a style="color: white" href="http://www.tubur.net:8081/index.html#/login" target="_blank">登录</a>
+            </div>
+            <div class="fl">欢迎来到坯布网，面料人必上的网站</div>
+            <div class="fr">咨询热线：0512-6351-5528</div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container clear">
+            <div class="logo fl">
+                <a href="home.html">
+                    <img src="https://www.luyutex.com/logo.png" alt="" />
+                </a>
+            </div>
+            <div class="tit1 fl">图布网</div>
+            <div class="tit2 fl">全棉坯布专家</div>
+            <div class="fr">
+                <div class="search fl">
+                    <input class="fl" id="name" type="text" name="test"/>
+                    <button type="button" id="search-btn" class="fl">搜索</button>
+                </div>
+                <ul class="img-list inline fl">
+                    <li>
+                        <img src="images/pt-ico1.png" alt="" />
+                        <div>质量保证</div>
+                    </li>
+                    <li>
+                        <img src="images/pt-ico2.png" alt="" />
+                        <div>售后服务</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu themeBg">
+        <div class="container">
+            <ul class="nav tc">
+	            <li>
+	                <a href="strongSupplier.html">实力供应商</a>
+	            </li>
+                <li>
+                    <a href="home.html">网站首页</a>
+                </li>
+	            <li>
+	                <a href="yxSupplier.html">优选供应商</a>
+	            </li>
+                <li  class="active">
+                    <a href="pibu.html">坯布数据库</a>
+                </li>
+                <li >
+                    <a href="jiafang.html">家纺数据库</a>
+                </li>
+                <li>
+                    <a href="banpiao.html">半漂数据库</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.luyutex.com/uploads/190705/4-1ZF5152642146.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.luyutex.com/uploads/161017/4-16101G6210L94.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://www.luyutex.com/uploads/161017/4-16101G62130224.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="main personal-main">
+        <div class="container">
+            <div class="search-guide">
+                <div class="search-item clear">
+                    <div class="search-item-left fl">坯布类型：</div>
+                    <ul class="search-item-right fl inline" id="grey-fabric-type">
+                        <li>
+                            <a href="javascript:;" class="active">不限</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-item clear">
+                    <div class="search-item-left fl">成份：</div>
+                    <ul class="search-item-right fl inline" id="ingredients">
+                        <li>
+                            <a href="javascript:;" class="active">不限</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-item clear">
+                    <div class="search-item-left fl">织物组织：</div>
+                    <ul class="search-item-right fl inline" id="organization-class">
+                        <li>
+                            <a href="javascript:;" class="active">不限</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-item clear">
+                    <div class="search-item-left fl">门幅：</div>
+                    <ul class="search-item-right fl inline" id='menfu'>
+                        <li>
+                            <a href="javascript:;" class="active" data-name="0">不限</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="1">150"-160"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="2">161"-170"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="3">171"-180"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="4">181"-190"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="5">191"-200"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="6">201"-230"</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="7">230"以上</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-item clear">
+                    <div class="search-item-left fl">克重：</div>
+                    <ul class="search-item-right fl inline" id='kezhong'>
+                        <li>
+                            <a href="javascript:;" class="active" data-name="0">不限</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="1">100克以下</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="2">100-149克</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="3">150-199克</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="4">200-299克</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-name="5">300克以上</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data-list" id="data-list">
+                <ul class="data-list-item inline bg">
+                    <li class="w180">品名</li>
+                    <li class="w120">批号</li>
+                    <li class="w120">经向</li>
+                    <li class="w120">纬向</li>
+                    <li class="w120">规格</li>
+                    <li class="w120">上机门幅/cm</li>
+                    <li class="w120">下机门幅/cm</li>
+                    <li class="w140">公司名称</li>
+                    <li class="w158">更新日期</li>
+                </ul>
+            </div>
+
+            <div id="pNum" class="num"></div>
+            <div id="myPage" class="demo" style="margin: 10px auto;width:100%;text-align: center;"</div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="nav">
+                <ul class="link-list">
+                    <li>
+                        <a href="home.html">网站首页</a>
+                    </li>
+                    <span>|</span>
+		            <li>
+		                <a href="strongSupplier.html">实力供应商</a>
+		            </li>
+                    <span>|</span>
+		            <li>
+		                <a href="yxSupplier.html">优选供应商</a>
+		            </li>
+                    <span>|</span>
+                    <li>
+                        <a href="pibu.html">坯布数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="jiafang.html">家纺数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="banpiao.html">半漂数据库</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright tc">Copyright  2014 Pibu.com. All Rights Reserved. 版权所有 江苏导航纺织科技有限公司 苏ICP备20003659号  </div>
+            <div class="tc">苏公网备案 20003659号  站长统计</div>
+        </div>
+    <script src="plug/jquery/jquery.min.js"></script>
+    <script src="plug/swiper/swiper.min.js"></script>
+    <script src="plug/spage/jquery.sPage.js"></script>
+    <script src="js/ajax.js"></script>
+    <script>
+        $(function () {
+
+
+
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            });
+
+            var data = {
+                pageNum: 1,
+                pageSize: 1000,
+                rouse: 0
+            };
+
+            ajax('/hptype/list', 'GET', data, function (res) {
+                console.log(res.data)
+                var str = '';
+                for (var i = 0; i < res.data.records.length; i++) {
+                    var className = '';
+                    // if (i == 0) {
+                    //     className = 'class="active"';
+                    // }
+                    str += '<li><a href="javascript:;" ' + className + ' data-id="' + res.data.records[i].id +' "data-name="' + res.data.records[i].typeName + '">' + res.data.records[i].typeName + '</a></li>';
+                }
+                if (str) {
+                    $('#grey-fabric-type').append(str);
+                }
+
+            });
+            var name1='';
+            var name2='';
+            var name3='';
+            var name4=0;
+            var name5=0;
+            var value;
+            $('#search-btn').on('click',function(){
+            value=$("input[name='test']").val()
+                console.log(value)
+                getList(1,20,name1,name2,name3,name4,name5,value)
+            })
+            getList(1,20,name1,name2,name3,name4,name5)
+           $("#grey-fabric-type").on('click','a',function(e){
+               console.log(e)
+              $(this).addClass('active').parent().siblings('li').find('a').removeClass('active')
+               name1=e.target.text;
+               getList(1,20,name1,name2,name3,name4,name5)
+           });
+           $("#ingredients").on('click','a',function(e){
+               name2=e.target.text
+               $(this).addClass('active').parent().siblings('li').find('a').removeClass('active')
+               getList(1,20,name1,name2,name3,name4,name5)
+           });
+           $("#organization-class").on('click','a',function(e){
+               name3=e.target.text
+               $(this).addClass('active').parent().siblings('li').find('a').removeClass('active')
+               getList(1,20,name1,name2,name3,name4,name5)
+           });
+           $("#menfu li a").on('click',function(){
+              name4=parseInt($(this).attr('data-name'))
+              $(this).addClass('active').parent().siblings('li').find('a').removeClass('active')
+              getList(1,20,name1,name2,name3,name4,name5)
+           })
+           $("#kezhong li a").on('click',function(){
+              name5=parseInt($(this).attr('data-name'))
+              $(this).addClass('active').parent().siblings('li').find('a').removeClass('active')
+              getList(1,20,name1,name2,name3,name4,name5)
+           })
+            ajax('/cftype/list', 'GET', data, function (res) {
+                var str = '';
+                for (var i = 0; i < res.data.records.length; i++) {
+                    str += '<li><a href="javascript:;" data-id="' + res.data.records[i].id + '">' + res.data.records[i].typeName + '</a></li>';
+                }
+                if (str) {
+                    $('#ingredients').append(str);
+                }
+            });
+
+            ajax('/zztype/list', 'GET', data, function (res) {
+                var str = '';
+                for (var i = 0; i < res.data.records.length; i++) {
+                    str += '<li><a href="javascript:;" data-id="' + res.data.records[i].id + '">' + res.data.records[i].typeName + '</a></li>';
+                }
+                if (str) {
+                    $('#organization-class').append(str);
+                }
+            });
+            //http://39.99.132.46:8081/v1/manage/pro/allInfos?pageNum=1&pageSize=100&name1=&name2=&name3=&name4=0&name5=0
+
+        });
+        function getList(pageNum,pageSize,name1,name2,name3,name4,name5,proName){
+                ajax('/pro/allInfos', 'GET', {
+                pageNum: pageNum,
+                pageSize: pageSize,
+                name1:name1=='不限'?'':name1,
+                name2:name2=='不限'?'':name2,
+                name3:name3=='不限'?'':name3,
+                name4:name4,
+                name5:name5,
+                proName:proName
+            }, function (res) {
+                console.log(res)
+                $("#myPage").sPage({
+                page:pageNum,//当前页码，必填
+                total:res.data.total,//数据总条数，必填
+	            pageSize:pageSize,//每页显示多少条数据，默认10条
+	            showTotal:true,//是否显示总条数，默认关闭：false
+                totalTxt:"共{total}条",//数据总条数文字描述，{total}为占位符，默认"共{total}条"
+                noData: false,//没有数据时是否显示分页，默认false不显示，true显示第一页
+	            showSkip:true,//是否显示跳页，默认关闭：false
+	            showPN:true,//是否显示上下翻页，默认开启：true
+	            prevPage:"上一页",//上翻页文字描述，默认“上一页”
+	            nextPage:"下一页",//下翻页文字描述，默认“下一页”
+                backFun:function(page){
+                     getList(page,pageSize,name1,name2,name3,name4,name5)
+                }
+            });
+                var str = '';
+                var list = res.data.records;
+                for (var i = 0; i < list.length; i++) {
+                    str += '<ul class="data-list-item inline"><li class="w180 text-overflow">' + (list[i].proName || '') + '</li><li class="w120 text-overflow">' + (list[i].proSn || '暂无') + '</li><li class="w120 text-overflow">' + (list[i].lng || '暂无') + '</li><li class="w120 text-overflow">' + (list[i].lag || '暂无') + '</li><li class="w120 text-overflow">' + (list[i].spec || '0') + '</li><li class="w120 text-overflow">' + (list[i].outDoor || '0') + '</li><li class="w120 text-overflow">' + (list[i].intDoor || '0') + '</li><li class="w140 text-overflow"><a class="hover-red" target="_blanck" href="supplier.html?customId='+list[i].customId+'">' + (list[i].comPanyName || '') + '</a></li><li class="w158 text-overflow">' + (list[i].creatTime || '') + '</li></ul>';
+                }
+                $('#data-list').html('<ul class="data-list-item inline bg"><li class="w180">品名</li><li class="w120">批号</li><li class="w120">经向</li><li class="w120">纬向</li><li class="w120">规格</li><li class="w120">上机门幅/cm</li><li class="w120">下机门幅/cm</li><li class="w140">公司名称</li><li class="w158">更新日期</li></ul>');
+                if (str) {
+                    $('#data-list').append(str);
+                }
+            });
+            }
+    </script>
+
+</body>
+</html>

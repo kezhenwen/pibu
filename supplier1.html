@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>图布网-公司详情</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="plug/pagination/jq.page.min.css"/>
+	<style>
+		html, body {
+			min-height: 100%;
+		}
+		.page {
+			min-height: 100%;
+			padding-bottom: 111px;
+			box-sizing: border-box;
+			display: none;
+		}
+		.footer {
+			margin-top: -111px;
+		}
+		.w60 {
+			width:60px;
+		}
+		.w80 {
+			width:80px;
+		}
+		.w100 {
+			width: 100px;
+		}
+		.w130 {
+			width: 130px;
+		}
+		.w110 {
+			width: 110px;
+		}
+		.w150 {
+			width: 150px;
+		}
+		.w200 {
+			width: 200px;
+		}
+		.company {
+			position: relative;
+		}
+		.company .bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 450px;
+			background: linear-gradient(to bottom, #066196, #ffffff);
+			z-index: -1;
+		}
+		.company-main {
+			display: flex;
+			flex-flow: column;
+			margin: 0 auto;
+			width:1200px;
+		}
+		.company-header {
+			position: relative;
+			padding: 40px 0 20px 0;
+			color: #ffffff;
+		}
+		.company-header .fl {
+			width: 450px;
+		}
+		.name {
+			margin-bottom: 14px;
+			padding-bottom: 14px;
+			font-size: 36px;
+			border-bottom: 1px solid #68a5c9;
+		}
+		.address {
+			font-size: 15px;
+			line-height: 20px;
+			word-break: break-all;
+		}
+		.des {
+			padding-top: 26px;
+			width: 700px;
+			font-size: 14px;
+			line-height: 18px;
+			color: #e3f5ff;
+			text-indent: 2em;
+		}
+		.company-banner {
+			height: 250px;
+			margin-bottom: 30px;
+			overflow: hidden;
+		}
+
+		/* 主体 */
+		.company .main-rows {
+			display: flex;
+			margin-bottom: 50px;
+		}
+		/* 侧边栏 */
+		.company .slider {
+			flex: 0 0 220px;
+			margin-right: 30px;
+		}
+		.company .slider h3, .company .products h3 {
+			margin: 0 0 10px 0;
+			padding: 0 15px 0 10px;
+			line-height: 40px;
+			color: #ffffff;
+			background-color: #4b9dd4;
+		}
+		.company .slider h3 a, .company .products h3 a {
+			color: #ffffff;
+			font-size: 12px;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+		.company .slider ul {
+			margin-bottom: 20px;
+		}
+		.company .slider ul li, .company .slider p{
+			position: relative;
+			width: 200px;
+			line-height: 22px;
+			padding-left: 20px;
+		}
+		.company .slider ul li:before, .company .slider p:before {
+			display: inline-block;
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			border: 5px solid transparent;
+			border-left-color: #cccccc;
+		}
+		/* 右侧产品 */
+		.company .products {
+			flex: auto;
+		}
+		.company .list ul {
+			min-height: 320px;
+			margin-bottom: 30px;
+		}
+		.company .spage-number span.active {
+			background: #4b9dd4;
+			border-color: #4b9dd4;
+		}
+		.company .spage-number span, .company .spage-skip span {
+			line-height: 27px;
+			padding: 0 11px;
+		}
+		.company .spage-skip {
+			line-height: 29px;
+		}
+		.company .spage-skip input {
+			height: 29px;
+		}
+		.company .list ul li {
+			display: flex;
+			margin-bottom: 10px;
+			line-height: 19px;
+			font-size: 0;
+			text-align: center;
+		}
+		.company .list ul li span {
+			display: inline-block;
+			font-size: 14px;
+			vertical-align: middle;
+			word-break: break-all;
+		}
+		.company .list ul li:first-child {
+			margin-bottom: 16px;
+			font-weight: bold;
+			line-height: 22px;
+		}
+	</style>
+</head>
+<body>
+<div class="page">
+	<div class="company">
+		<div class="bg"></div>
+		<div class="company-main">
+			<div class="company-header">
+				<div class="fl">
+					<h3 class="name">苏州天玺纺织制品有限公司</h3>
+					<p class="address">地址：苏州天玺纺织制品有限公司苏州天玺纺织制品有限公</p>
+				</div>
+				<p class="des fr">苏州天玺纺织制品有限公司</p>
+			</div>
+			<div class="company-banner">
+				<img width="100%" src="images/banner1.jpg"/>
+			</div>
+			<!--<div class="bread-nav">您当前的位置：<a href="">首页</a><a href="">公司详情</a></div>-->
+			<div class="main-rows">
+				<div class="slider">
+					<div class="news">
+						<h3>新闻中心<a href="" class="fr"></a></h3>
+						<ul>
+							<li class="text-news">暂无新闻</li>
+						</ul>
+					</div>
+					<div class="type">
+						<h3>公司所属行业<a href="" class="fr"></a></h3>
+						<ul>
+							<li class="text-overflow">类别一</li>
+						</ul>
+					</div>
+					<div class="type">
+						<h3>机台数范围<a href="" class="fr"></a></h3>
+						<ul>
+							<li class="text-scope">类别一</li>
+						</ul>
+					</div>
+					<div class="contact">
+						<h3>联系方式<a href="" class="fr"></a></h3>
+						<p>联系人：<span class="contact-name">吕先生</span></p>
+						<p>电话：<span class="contact-tel">15250534181</span></p>
+						<p>邮件：<span class="contact-email">xxx</span></p>
+						<p>手机：<span class="contact-phone">15250534181</span></p>
+					</div>
+				</div>
+				<div class="products">
+					<h3>最新上架产品<a href="" class="fr"></a></h3>
+					<div class="list">
+						<ul>
+							<li><span class="w110">品名名称</span><span class="w100">规格</span><span class="w60">经向</span><span class="w60">纬向</span><span class="w100">上机门幅/cm</span><span class="w100">下机门幅/cm</span><span class="w60">组织</span><span class="w60">成分</span><span class="w60">还布类型</span><span class="w60">重量/kg</span><span class="w60">方案</span><span class="w130">创建时间</span></li>
+						</ul>
+						<div class="fr" id="pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="nav">
+			<ul class="link-list">
+				<li>
+					<a href="index.html">网站首页</a>
+				</li>
+				<span>|</span>
+                <li>
+                    <a href="strongSupplier.html">实力供应商</a>
+                </li>
+                <span>|</span>
+	            <li>
+	                <a href="yxSupplier.html">优选供应商</a>
+	            </li>
+                <span>|</span>
+				<li>
+					<a href="pibu.html">坯布数据库</a>
+				</li>
+				<span>|</span>
+				<li>
+					<a href="jiafang.html">家纺数据库</a>
+				</li>
+				<span>|</span>
+				<li>
+					<a href="banpiao.html">半漂数据库</a>
+				</li>
+				<span>|</span>
+				<li>
+					<a href="contact.html">联系我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="copyright tc">Copyright 2014 Pibu.com. All Rights Reserved. 版权所有 江苏导航纺织科技有限公司 苏ICP备20003659号  </div>
+		<div class="tc">苏公网备案 20003659号  站长统计</div>
+	</div>
+</div>
+<script src="plug/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+<script src="plug/pagination/jq.page.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+	;(function(){
+		// 获取公司id
+		// let companyId = location.search.split("=")[1];
+		// demo id
+		let companyId = 654321;
+		let $loadingPage = $('.page');
+		let $companyName = $('.name');
+		//公司描述
+		let $companyDes = $('.des');
+		//公司地址
+		let $companyAddress = $('.address');
+		let $contactName = $('.contact-name');
+		let $contactTel = $('.contact-tel');
+		let $contactPhone = $('.contact-phone');
+		let $industry = $('.text-overflow');
+		let $scope1 = $('.text-scope');
+		let $list = $(".list ul");
+		let $tabelHead = $(".list ul li");
+		let $pagination = $("#pagination");
+		// 获取数据
+		function getCompanyData(param){
+			ajax('/user/one', 'GET', {
+				customId:param
+			}, function (res) {
+				console.log(res)
+				let data = res.data[0]
+				$companyName.text(data.comPanyName);
+				$companyDes.text(data.contrast);
+				$companyAddress.text(data.comAddress);
+				$('title').append('-'+data.comPanyName)
+				$contactName.text(data.person)
+				$contactTel.text(data.phoneNumber)
+				$contactPhone.text(data.phoneNumber);
+				$industry.text(data.industry);
+				$scope1.text(data.scope1);
+				$loadingPage.show();
+			});
+		};
+
+		function getProducts(param,callbackFn){
+			ajax('/proShop/tablelist', 'GET', param, function (res) {
+				let data = res.data;
+				let str = "";
+				for(let i=0; i<data.records.length; i++){
+					str += '<li><span class="w110">'
+							+ (data.records[i].proName||"-")+'</span><span class="w100">'
+							+ (data.records[i].spec||"-")+'</span><span class="w60">'
+							+ (data.records[i].lng||"-")+'</span><span class="w60">'
+							+ (data.records[i].lag||"-")+'</span><span class="w100">'
+							+ (data.records[i].outDoor||"-")+'</span><span class="w100">'
+							+ (data.records[i].intDoor||"-")+'</span><span class="w60">'
+							+ (data.records[i].typeName3||"-")+'</span><span class="w60">'
+							+ (data.records[i].typeName1||"-")+'</span><span class="w60">'
+							+ (data.records[i].typeName2||"-")+'</span><span class="w60">'
+							+ (data.records[i].weigth||"-")+'</span><span class="w60">'
+							+ (data.records[i].typeName||"-")+'</span><span class="w130">'
+							+ (data.records[i].creatTime.substr(0, 11)||"-")+'</span></li>'
+				}
+				$list.html(str).prepend($tabelHead);
+
+				// 分页
+				$pagination.sPage({
+					page:param.pageNum,
+					total:data.total,
+					pageSize:data.size,
+					showTotal:true,
+					totalTxt:"共{total}条",
+					noData: false,
+					showSkip:false,
+					showPN:true,
+					prevPage:"上一页",
+					nextPage:"下一页",
+					backFun:function(page){
+//			                	console.log(page)
+						getProducts({
+							customId: companyId,
+							pageNum: page,
+							pageSize: 10,
+						});
+					}
+				});
+
+			})
+		};
+		
+		// 获取默认数据
+		getCompanyData(companyId);
+		// 获取默认产品数据
+		getProducts({
+			customId: companyId,
+			pageNum: 1,
+			pageSize: 10,
+		});
+
+	})();
+
+</script>
+</body>
+</html>
